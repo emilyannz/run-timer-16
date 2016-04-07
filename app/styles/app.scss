@@ -1,9 +1,8 @@
 @import 'variables';
-@import 'font-awesome';
-
+// @import 'font-awesome';
 body {
   margin: 0 $gutter;
-  font-family: sans-serif;
+  font-family: $font-family;
 }
 
 ul {
@@ -21,29 +20,21 @@ ul {
     flex-grow: 1;
   }
 
-  &__footer {
-    margin: 0 (-$gutter);
-    background: $brand-grey;
-    color: $brand-white;
+  .container {
+    max-width: 60rem;
+    margin: auto;
   }
-}
 
-.container {
-  max-width: 60rem;
-  margin: auto;
-}
+  .top-nav {
+    margin: 0 (-$gutter);
+    background: $brand-header-bar-blue;
+    color: $brand-title-white;
+    font-size: 1.6rem;
+    overflow: auto;
 
-.top-nav {
-  margin: 0 (-$gutter);
-  background: $brand-blue;
-
-  color: $brand-white;
-  font-size: 1.6rem;
-
-  overflow: auto;
-
-  &__link {
-    color: inherit;
-    text-decoration: none;
+    &__title {
+      color: inherit;
+      text-decoration: none;
+    }
   }
 }
