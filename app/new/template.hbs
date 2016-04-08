@@ -7,8 +7,8 @@
   <h2 class=>The New Run</h2>
 </div>
 
-<div class="new-run-form">
-<form>
+<div class="new-run-screen">
+<form class="new-run-form">
   <p class="new-run-form__p">
     <label class="new-run-form__label">Run Time:</label>
     {{input class="new-run-form__input" value=runTime placeholder="Run Time"}}
@@ -21,11 +21,13 @@
     <label class="new-run-form__label">Race Notes:</label>
     {{input class="new-run-form__input" value=notes placeholder="Race Notes"}}
   </p>
-  <div class="new-run-form__buttons">
-    <p>
-      <button>Cancel</button>
-      <button>Save</button>
-    </p>
+  <div class="new-run-form-buttons">
+      {{!-- {{#link-to "index"}} --}}
+      <button class="new-run-form-buttons__cancel">Cancel</button>
+      <button class="new-run-form-buttons__save">Save</button>
+      {{!-- {{/link-to}} --}}
   </div>
   </form>
 </div>
+
+{{!-- {{action clearForm on="click"}} --}}

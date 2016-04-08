@@ -1,6 +1,6 @@
 .new-run-form {
-  color: $brand-regular-text;
   background-color: $brand-background;
+  color: $brand-regular-text;
 }
 
 .new-run-form__title {
@@ -13,13 +13,33 @@
 
 .new-run-form__input {
   background-color: $brand-background;
+  border: 0;
+  border-bottom: 1px solid $brand-regular-text;
 }
 
 ::-webkit-input-placeholder {
    color: $brand-placeholder-text;
 }
 
-.new-run-form__buttons {
+
+.new-run-form-buttons {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+
+  &__save {
+    width: 70px;
+    height: 25px;
+    margin-left: 2rem;
+    border-radius: 0px;
+    background-color: $brand-button-green;
+    color: white;
+    border: 0;
+
+    &__cancel {
+      height: 25px;
+      width: 70px;
+      border-radius: 0px;
+      border: 0;
+    }
+  }
 }
