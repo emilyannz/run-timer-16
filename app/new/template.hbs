@@ -1,0 +1,23 @@
+{{outlet}}
+
+<h2>The New Run</h2>
+
+<form {{action submitRun on="submit"}}>
+  <p>
+    <label>Run Time:</label>
+    {{input value=runTime}}
+  </p>
+  <p>
+    <label>Race Date:</label>
+    {{input value=raceDate}}
+  </p>
+  <p>
+    <label>Race Notes:</label>
+    {{input value=notes}}
+  </p>
+
+  <p>
+    <button>Cancel</button>
+    <button>Save</button>
+  </p>
+</form>
