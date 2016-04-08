@@ -1,23 +1,31 @@
 {{outlet}}
 
-<h2>The New Run</h2>
 
-<form {{action submitRun on="submit"}}>
-  <p>
-    <label>Run Time:</label>
-    {{input value=runTime}}
-  </p>
-  <p>
-    <label>Race Date:</label>
-    {{input value=raceDate}}
-  </p>
-  <p>
-    <label>Race Notes:</label>
-    {{input value=notes}}
-  </p>
 
-  <p>
-    <button>Cancel</button>
-    <button>Save</button>
+
+<div class="new-run-form__title">
+  <h2 class=>The New Run</h2>
+</div>
+
+<div class="new-run-form">
+<form>
+  <p class="new-run-form__p">
+    <label class="new-run-form__label">Run Time:</label>
+    {{input class="new-run-form__input" value=runTime placeholder="Run Time"}}
   </p>
-</form>
+  <p>
+    <label class="new-run-form__label">Race Date:</label>
+    {{input class="new-run-form__input" value=raceDate placeholder="Race Date"}}
+  </p>
+  <p>
+    <label class="new-run-form__label">Race Notes:</label>
+    {{input class="new-run-form__input" value=notes placeholder="Race Notes"}}
+  </p>
+  <div class="new-run-form__buttons">
+    <p>
+      <button>Cancel</button>
+      <button>Save</button>
+    </p>
+  </div>
+  </form>
+</div>

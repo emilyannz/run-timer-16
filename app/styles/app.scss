@@ -1,5 +1,5 @@
 @import 'variables';
-@import 'form';
+@import 'new_run_form';
 // @import 'font-awesome';
 
 html {
@@ -11,7 +11,8 @@ html {
 
 body {
   margin: 0 $gutter;
-  font-style: $font-family;
+  font-family: $font-family;
+  background-color: $brand-background;
 }
 
 ul {

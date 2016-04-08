@@ -1,0 +1,25 @@
+.new-run-form {
+  color: $brand-regular-text;
+  background-color: $brand-background;
+}
+
+.new-run-form__title {
+  color: $brand-title-white;
+}
+
+.new-run-form__label {
+  display: none;
+}
+
+.new-run-form__input {
+  background-color: $brand-background;
+}
+
+::-webkit-input-placeholder {
+   color: $brand-placeholder-text;
+}
+
+.new-run-form__buttons {
+  display: flex;
+  justify-content: space-between;
+}
