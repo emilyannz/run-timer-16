@@ -1,16 +1,5 @@
-.new-run-screen {
+.all-run-screen {
   display: flex;
-  flex-direction: column;
-  background-color: $brand-background;
-  color: $brand-regular-text;
-}
-
-.new-run-form__title {
-  color: $brand-title-white;
-}
-
-.new-run-form__label {
-  display: none;
 }
 
 .new-run-form__input {
@@ -23,7 +12,6 @@
 ::-webkit-input-placeholder {
    color: $brand-placeholder-text;
 }
-
 
 .new-run-form-buttons {
   display: flex;

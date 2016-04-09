@@ -1,14 +1,8 @@
 {{outlet}}
 
-
-
-
-<div class="new-run-form__title">
-  <h2 class=>The New Run</h2>
-</div>
-
 <div class="new-run-screen">
-<form class="new-run-form">
+    <h2 class=>The New Run</h2>
+<form class="new-run-form" {{action addNewRun on="submit"}}>
   <p class="new-run-form__p">
     <label class="new-run-form__label">Run Time:</label>
     {{input class="new-run-form__input" value=runTime placeholder="Run Time"}}
