@@ -8,7 +8,7 @@ export default Ember.Controller.extend({
     raceNote: this.raceNote,
   };
 
-  const url = `http://tiny-tn.herokuapp.com/collections/runs-jw`;
+  const url = `http://tiny-tn.herokuapp.com/collections/runs-ez`;
 
   const fetchOptions = {
     method: `POST`,
