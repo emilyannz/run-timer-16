@@ -1,23 +1,40 @@
 import Ember from 'ember';
 
 export default Ember.Controller.extend({
-  addNewRun() {
-      const values = {
-        runTime: this.runTime,
-        raceDate: this.raceDate,
-        notes: this.notes,
-      };
+  saveNewRun() {
+  const runInfo = {
+    runTime: this.runTime,
+    runDate: this.runDate,
+    raceNote: this.raceNote,
+  };
 
-    fetch(`http://tiny-tn.herokuapp.com/collections/runs-ez`, {
-      method: `POST`,
-      headers: {
-        Accept: `application/json`,
-          'Content-Type': `application/json`,
-      },
-      body: JSON.stringify(values),
-    }).then((res) => res.json())
-    .then((recipe) => {
-      this.transitionToRoute('index');
+  const url = `http://tiny-tn.herokuapp.com/collections/runs-jw`;
+
+  const fetchOptions = {
+    method: `POST`,
+    headers: {
+      Accept: `application/json`,
+      'Content-type': `application/json`,
+    },
+    body: JSON.stringify(runInfo),
+  };
+
+  fetch(url, fetchOptions)
+    .then((response) => response.json())
+    .then((run) => {
+      this.addNewRun(run);
+      this.clearForm();
+      this.transitionToRoute(`index`);
     });
-  },
+},
+
+clearForm() {
+  this.set(`runTime`, ``);
+  this.set(`runDate`, ``);
+  this.set(`raceNote`, ``);
+},
+
+addNewRun(run) {
+  this.set(`model`, [run, ...this.model]);
+},
 });

@@ -3,6 +3,7 @@
   flex-direction: column;
   background-color: $brand-background;
   color: $brand-regular-text;
+  margin: 1rem;
 }
 
 .new-run-form__title {
@@ -14,10 +15,12 @@
 }
 
 .new-run-form__input {
-  flex-grow: 1;
+  width: 100%;
+  margin-top: 1rem;
   background-color: $brand-background;
   border: 0;
   border-bottom: 1px solid $brand-regular-text;
+  font-size: $font-size;
 }
 
 ::-webkit-input-placeholder {
