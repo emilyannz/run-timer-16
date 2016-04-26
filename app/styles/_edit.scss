@@ -1,0 +1,17 @@
+.edit-header__directions {
+  margin: 0;
+  padding: $gutter 0 0 $gutter;
+  font-weight: lighter;
+}
+
+.update-edit-save {
+  margin-right: $gutter;
+  color: $brand-button-text-grey;
+}
+
+.edit-textarea {
+  border: 0;
+  border-bottom: $brand-border;
+  background: transparent;
+  color: $brand-green-text;
+}
