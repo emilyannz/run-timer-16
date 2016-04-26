@@ -2,20 +2,11 @@
 
 {{!-- <h2 id="title">Welcome to Ember</h2> --}}
 
-<div class="app">
-  <header>
-    <nav class="top-nav">
-      <div class="container">
-        <ul class="top-nav">
-          <li class="top-nav__title">Run Timer</li>
-        </ul>
-      </div>
-    </nav>
-  </header>
-
-  <div class="app__content">
-    <div class="container">
-      {{outlet}}
-    </div>
-  </div>
+<div class="nav-container">
+  <nav class="nav">
+    <h1 class="title">Run Timer</h1>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/scss'>
+  </nav>
 </div>
+
+<div class="app-container">{{outlet}}</div>

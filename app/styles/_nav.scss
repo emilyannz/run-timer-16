@@ -1,0 +1,17 @@
+
+.nav-container {
+  width: 100%;
+
+  padding: $gutter;
+  background: $brand-header-bar-blue;
+}
+
+.nav {
+  width: $max-content-width;
+}
+
+.title {
+  width: 100%;
+  padding-left: $gutter;
+  color: $brand-title-white;
+}
