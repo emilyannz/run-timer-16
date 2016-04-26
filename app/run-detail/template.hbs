@@ -1,5 +1,3 @@
-{{}}
-
 {{outlet}}
 
 <header class="detail-header">
@@ -7,17 +5,26 @@
 </header>
 
 <div class="run-detail-container">
-  <form class="run-detail-form">
+  <div class="run-detail-form">
+    {{!-- **Is it better to use a div or form here?** --}}
     <div class="run-info">
-      {{input class="run-info__field detail-date" placeholder="April 10, 2016" type="text" value=model.runDate}}
-      {{input class="run-info__field detail-time" placeholder="00:28:25" type="text" value=model.runTime}}
+      <h4 class="run-info__field detail-date">{{model.runDate}}</h4>
+      <h4 class=="run-info__field detail-time">{{model.runTime}}</h4>{{!-- **Is it better to use input here?** --}}
     </div>
+
     <div class="run-info">
-      {{textarea class="run-info__detail" autoresize=true rows="7" max-rows="20" cols="42" placeholder="Today, is a day like no other, tis the best day on the planet to be alive" type="msg" value=model.raceNote}}
+      <p class="run-info__detail">{{model.raceNote}}</p>
+      {{!-- **Is it better to use textarea here?** --}}
+      </p>
     </div>
+
     <div class="run-info">
-      {{#link-to "index"}}<button class="run-info__button back fa fa-chevron-left"></button>{{/link-to}}
-      <button class="run-info__button update fa fa-pencil"></button>
+      {{#link-to "index"}}
+        <button class="run-info__button back fa fa-chevron-left"></button>
+      {{/link-to}}
+      {{#link-to "edit" model._id}}
+        <button class="run-info__button update fa fa-pencil"></button>
+      {{/link-to}}
     </div>
-  </form>
+  </div>
 </div>
