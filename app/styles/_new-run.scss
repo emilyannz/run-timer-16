@@ -1,0 +1,48 @@
+.new-run {
+  &__header {
+    padding: $gutter;
+    color: $brand-title-white;
+  }
+}
+
+.form-fields {
+  display: flex;
+
+  &__input {
+    flex-grow: 1;
+    margin: $gutter;
+    padding: $gutter;
+    border-bottom: $brand-border;
+  }
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &__button {
+    margin: $gutter * 2 $gutter;
+    border: 0;
+    border-radius: 0.1rem;
+    color: $brand-button-text-grey;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.cancel {
+  padding: $gutter 2rem;
+  background: $brand-button-grey;
+}
+
+.save {
+  padding: $gutter 2.5rem;
+  background: $brand-button-green;
+
+  &:hover {
+    // background: $brand
+  }
+}
