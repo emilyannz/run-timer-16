@@ -1,57 +1,6 @@
-.nav-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 88vh;
-  margin: 0;
-  background: $brand-button-text-grey;
-  color: $brand-regular-text;
-}
-
-.time-section {
-  flex-grow: 1;
-  width: 100%;
-  padding: 0 $gutter;
-}
-
-.time-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 0;
-  padding-top: $gutter;
-  border-bottom: $brand-border;
-
-  &__date {
-    text-align: left;
-  }
-
-  &__date-item {
-    width: 100% / 2 - #{$gutter};
-    margin: 0;
-    padding: $gutter;
-    color: $brand-regular-text;
-  }
-
-  &__time {
-    text-align: right;
-  }
-
-  &__time-item {
-    width: 100% / 2 - #{$gutter};
-    margin: 0;
-    padding: $gutter;
-    color: $brand-green-text;
-  }
-}
-
-.footer {
-  text-align: right;
-}
-
-.add-new {
-  margin: $gutter;
-  padding: $gutter * 2;
-  border-radius: 50%;
-  background: $button-green;
-  color: $brand-white;
-}
+@import 'variables';
+@import 'base';
+@import 'nav';
+@import 'new-run';
+@import 'run-detail';
+@import 'edit';
