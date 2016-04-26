@@ -1,0 +1,66 @@
+.detail-header {
+  padding: $gutter $gutter 0;
+  color: $brand-title-white;
+
+  &__title {
+    margin: 0;
+    padding: $gutter;
+  }
+}
+
+.run-detail-container {
+  margin: $gutter 0;
+  padding: 0 $gutter $gutter;
+}
+
+.run-detail-form {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  margin: 0;
+}
+
+.run-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0 $gutter;
+
+  &__detail {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: $brand-regular-text;
+  }
+
+  &__button {
+    justify-content: space-between;
+    margin-top: $gutter * 2;
+    padding: $gutter * 2;
+    border-radius: 50%;
+    background: $brand-button-green;
+    color: $brand-title-white;
+  }
+}
+
+.back {
+  margin-left: $gutter;
+  background: $brand-button-grey;
+  color: $brand-button-text-grey;
+}
+
+.update {
+  margin-right: $gutter;
+  color: $brand-edit;
+}
+
+.detail-date {
+  color: $brand-regular-text;
+}
+
+.detail-time {
+  color: $brand-green-text;
+  text-align: right;
+}
