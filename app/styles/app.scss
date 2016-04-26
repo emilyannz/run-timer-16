@@ -3,19 +3,6 @@
 @import 'new_run_form';
 // @import 'font-awesome';
 
-html {
-  box-sizing: border-box;
-}
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-body {
-  margin: 0 (-$gutter);
-  font-family: $font-family;
-  background-color: $brand-background;
-}
-
 ul {
   padding-left: 0;
   list-style: none;

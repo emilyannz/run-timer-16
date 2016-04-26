@@ -1,27 +1,25 @@
 {{outlet}}
 
-<div class="new-run-screen">
-    <h2 class=>The New Run</h2>
-<form class="new-run-form" {{action addNewRun on="submit"}}>
-  <p class="new-run-form__p">
-    <label class="new-run-form__label">Run Time:</label>
-    {{input class="new-run-form__input" value=runTime placeholder="Run Time"}}
-  </p>
-  <p>
-    <label class="new-run-form__label">Race Date:</label>
-    {{input class="new-run-form__input" value=raceDate placeholder="Race Date"}}
-  </p>
-  <p>
-    <label class="new-run-form__label">Race Notes:</label>
-    {{input class="new-run-form__input" value=notes placeholder="Race Notes"}}
-  </p>
-  <div class="new-run-form-buttons">
-      {{#link-to "index"}}
-      <button class="new-run-form-buttons__cancel">Cancel</button>
-      <button class="new-run-form-buttons__save">Save</button>
-      {{/link-to}}
+<header class="new-run">
+  <h1 class="new-run__header">New Run</h1>
+</header>
+
+<form class="form" {{action saveNewRun on="submit"}}>
+  <div class="form-column">
+    <div class="form-fields">
+      {{input class="form-fields__input" type="text" placeholder="Run Time" value=runTime}}
+    </div>
+    <div class="form-fields">
+      {{input class="form-fields__input" type="text" placeholder="Run Date" value=runDate}}
+    </div>
+    <div class="form-fields">
+      {{input class="form-fields__input" type="text" placeholder="Race Notes" value=raceNote}}
+    </div>
   </div>
-  </form>
-</div>
+  <div class="buttons">
+    {{#link-to "index"}}<button class="buttons__button cancel">Cancel</button>{{/link-to}}
+    <button class="buttons__button save">Save</button>
+  </div>
+
 
 {{!-- {{action clearForm on="click"}} --}}
