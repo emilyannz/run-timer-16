@@ -17,6 +17,7 @@
   display: flex;
   flex-direction: column;
   align-content: space-around;
+
   margin: 0;
 }
 
@@ -37,9 +38,12 @@
 
   &__button {
     justify-content: space-between;
+
     margin-top: $gutter * 2;
     padding: $gutter * 2;
+
     border-radius: 50%;
+
     background: $brand-button-green;
     color: $brand-title-white;
   }
@@ -47,6 +51,7 @@
 
 .back {
   margin-left: $gutter;
+
   background: $brand-button-grey;
   color: $brand-button-text-grey;
 }

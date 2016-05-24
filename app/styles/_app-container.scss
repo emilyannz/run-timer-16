@@ -1,15 +1,20 @@
 .app-container {
   display: flex;
   flex-direction: column;
+
   min-height: 88vh;
+
   margin: 0;
+
   background: $brand-button-text-grey;
   color: $brand-regular-text;
 }
 
 .time-section {
   flex-grow: 1;
+
   width: 100%;
+
   padding: 0 $gutter;
 }
 
@@ -17,6 +22,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
   margin: 0;
   padding-top: $gutter;
   border-bottom: $brand-border;
@@ -27,8 +33,10 @@
 
   &__date-item {
     width: 100% / 2 - #{$gutter};
+
     margin: 0;
     padding: $gutter;
+
     color: $brand-regular-text;
   }
 
@@ -38,8 +46,10 @@
 
   &__time-item {
     width: 100% / 2 - #{$gutter};
+
     margin: 0;
     padding: $gutter;
+
     color: $brand-green-text;
   }
 }

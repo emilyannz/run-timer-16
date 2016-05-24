@@ -10,8 +10,10 @@
 
   &__input {
     flex-grow: 1;
+
     margin: $gutter;
     padding: $gutter;
+
     border-bottom: $brand-border;
   }
 }
@@ -41,9 +43,8 @@
 .save {
   padding: $gutter 2.5rem;
   background: $brand-button-green;
-}
 
-//   &:hover {
-//     // background: TBD
-//   }
-// }
+  &:hover {
+    background: $brand-golden;
+  }
+}
