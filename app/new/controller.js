@@ -22,7 +22,6 @@ export default Ember.Controller.extend({
     fetch(url, fetchOptions)
       .then((response) => response.json())
       .then((run) => {
-        this.addNewRun(run);
         this.clearForm();
         this.transitionToRoute(`index`);
       });
@@ -33,8 +32,9 @@ export default Ember.Controller.extend({
     this.set(`runDate`, ``);
     this.set(`raceNote`, ``);
   },
+});
 
-  addNewRun(run) {
-    this.set(`model`, [run, ...this.model]);
-  },
+addNewRun(run) {
+this.set(`model`, [run, ...this.model]);
+},
 });

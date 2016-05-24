@@ -25,7 +25,6 @@ export default Ember.Controller.extend({
       .then((response) => response.json())
       .then((run) => {
         this.addNewUpdatedRun(run);
-        // this.transitionToRoute(`index`);
       });
   },
 
