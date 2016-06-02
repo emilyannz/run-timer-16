@@ -1,4 +1,4 @@
-.edit-header__directions {
+.detail-header__directions {
   margin: 0;
   padding: $gutter 0 0 $gutter;
   font-weight: lighter;
@@ -12,6 +12,7 @@
 .edit-textarea {
   border: 0;
   border-bottom: $brand-border;
+
   background: transparent;
   color: $brand-green-text;
 }
