@@ -32,9 +32,8 @@ export default Ember.Controller.extend({
     this.set(`runDate`, ``);
     this.set(`raceNote`, ``);
   },
-});
 
-addNewRun(run) {
-this.set(`model`, [run, ...this.model]);
-},
-});
+  addNewRun(run) {
+    this.set(`model`, [run, ...this.model]);
+    },
+  });
