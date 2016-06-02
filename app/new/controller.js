@@ -22,6 +22,7 @@ export default Ember.Controller.extend({
     fetch(url, fetchOptions)
       .then((response) => response.json())
       .then((run) => {
+        this.addNewRun(run);
         this.clearForm();
         this.transitionToRoute(`index`);
       });
@@ -35,5 +36,5 @@ export default Ember.Controller.extend({
 
   addNewRun(run) {
     this.set(`model`, [run, ...this.model]);
-    },
-  });
+  },
+});

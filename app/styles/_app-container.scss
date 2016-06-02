@@ -25,6 +25,7 @@
 
   margin: 0;
   padding-top: $gutter;
+
   border-bottom: $brand-border;
 
   &__date {
@@ -61,7 +62,9 @@
 .add-new {
   margin: $gutter;
   padding: $gutter * 2;
+
   border-radius: 50%;
+
   background: $brand-button-green;
   color: $brand-title-white;
 }

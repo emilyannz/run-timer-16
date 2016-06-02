@@ -1,8 +1,8 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model(specificRun) {
-    return fetch(`http://tiny-tn.herokuapp.com/collections/runs-ez/${specificRun._id}`)
+  model(specifiedRun) {
+    return fetch(`http://tiny-tn.herokuapp.com/collections/runs-ez/${specifiedRun._id}`)
     .then((response) => response.json());
   },
 });

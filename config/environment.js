@@ -14,7 +14,7 @@ module.exports = function(environment) {
     },
 
     googleFonts: [
-      'Roboto:300,700',
+      'Roboto:300, 700',
     ],
 
     APP: {
