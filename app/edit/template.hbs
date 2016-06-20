@@ -1,0 +1,26 @@
+{{outlet}}
+
+<header class="detail-header">
+  <h1 class="detail-header__title">Edit Run</h1>
+  <h5 class="detail-header__directions">Click on the below fields to edit:</h5>
+</header>
+
+<div class="run-detail-container">
+  <form class="form" {{action editCurrentRun on="submit"}}>
+    <div class="column">
+      <div class="form-fields">
+        {{input class="form-fields__input" type="text" placeholder="Run Time" value=model.runTime}}
+      </div>
+      <div class="form-fields">
+        {{input class="form-fields__input" type="text" placeholder="Run Date" value=model.runDate}}
+      </div>
+      <div class="form-fields">
+        {{textarea class="form-fields__input edit-textarea" autoresize=true max-rows="20" type="text" placeholder="Race Notes" value=model.raceNote}}
+      </div>
+    </div>
+    <div class="buttons">
+      {{#link-to "index"}}<button class="run-info__button back fa fa-chevron-left"></button>{{/link-to}}
+      <button class="run-info__button update-edit-save fa fa-floppy-o" {{action editCurrentRun model}}></button>
+    </div>
+  </form>
+</div>
